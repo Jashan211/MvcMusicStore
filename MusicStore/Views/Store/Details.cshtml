@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MusicStore.Models.Album>
+
+@{
+    ViewBag.Title = ViewBag.Genre;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Genre Albums</h2>
+
+@foreach (var a in Model)
+{
+<section>
+    <h3>@a.Title</h3>
+    <img src="@a.AlbumArtUrl" alt="@a.Title" />
+    <p>@a.AlbumPrice</p>
+</section>
+}

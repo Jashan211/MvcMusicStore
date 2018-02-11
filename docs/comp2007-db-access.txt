@@ -1,0 +1,6 @@
+Azure SQL Server
+
+host: comp2007w2018.database.windows.net
+database name: musicStore
+username: musicstoredb
+password: comp2007-
